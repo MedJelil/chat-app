@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Messagerie en Temps Réel</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
   </head>
   <body>
     <div class="chat-container">
       <header>
-        <h2>💬 Chat en temps réel</h2>
+        <h2><i class="bx bx-message-rounded-dots"></i> Chat en temps réel</h2>
       </header>
       <div id="messages" class="messages"></div>
       <div class="input-container">
         <input id="user" type="text" placeholder="Votre nom" />
         <input id="message" type="text" placeholder="Écrivez un message..." />
-        <button onclick="sendMessage()">➤</button>
+        <button onclick="sendMessage()">
+          <div class="i-wrapper-1">
+            <div class="i-wrapper">
+              <i class="bx bx-send"></i>
+            </div>
+          </div>
+          <span>Send</span>
+        </button>
       </div>
     </div>
 
